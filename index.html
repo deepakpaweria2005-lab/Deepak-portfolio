@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deepak Paweria | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#07111f;
+    color:white;
+    line-height:1.6;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:#07111fee;
+    backdrop-filter:blur(10px);
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #243247;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#4da6ff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:60px 8%;
+}
+
+.hero-content{
+    max-width:850px;
+    text-align:center;
+}
+
+.profile{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #4da6ff;
+    margin-bottom:25px;
+    background:#12243b;
+}
+
+h1{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    color:#4da6ff;
+    font-size:25px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#b8c5d6;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#1479e8;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:45px;
+    color:#4da6ff;
+}
+
+.about{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    color:#c5d0dd;
+    font-size:18px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#0d1b2d;
+    border:1px solid #263c57;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    border-color:#4da6ff;
+}
+
+.card h3{
+    color:white;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#aebdce;
+}
+
+.certificate{
+    overflow:hidden;
+}
+
+.certificate img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.skills span{
+    display:inline-block;
+    background:#102a46;
+    color:#65b4ff;
+    padding:10px 18px;
+    border-radius:25px;
+    margin:7px;
+    border:1px solid #27577f;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#040b14;
+    color:#8291a5;
+}
+
+@media(max-width:600px){
+    h1{
+        font-size:40px;
+    }
+
+    nav a{
+        display:none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Deepak Paweria</div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+
+        <!-- DP baad mein yahan upload karenge -->
+        <div class="profile" style="display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:bold;">
+            DP
+        </div>
+
+        <h1>Deepak Paweria</h1>
+
+        <h2>AI • Data Science • Business Analytics</h2>
+
+        <p>
+            Welcome to my personal portfolio.  
+            I am continuously learning and building my skills
+            in technology, data and business analytics.
+        </p>
+
+        <a href="#certificates" class="btn">View My Certificates</a>
+
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="title">About Me</h2>
+
+    <div class="about">
+        <p>
+            Hello, I'm <b>Deepak Paweria</b>.
+            I have completed my Bachelor of Arts and I am developing
+            my knowledge in Artificial Intelligence, Data Science,
+            Business Analytics and computer applications.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="title">Education & Learning</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Bachelor of Arts</h3>
+            <p>Jaat College, Rohtak</p>
+        </div>
+
+        <div class="card">
+            <h3>Advanced Excel</h3>
+            <p>MKCL Computer Course</p>
+        </div>
+
+        <div class="card">
+            <h3>One-Year Diploma</h3>
+            <p>Diploma Certification</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="certificates">
+    <h2 class="title">HP Foundation Certifications</h2>
+
+    <div class="cards">
+
+        <div class="card certificate">
+            <img src="certificate1.jpg" alt="AI for Business Professionals Certificate">
+            <h3>AI for Business Professionals</h3>
+            <p>HP LIFE | HP Foundation</p>
+        </div>
+
+        <div class="card certificate">
+            <img src="certificate2.jpg" alt="Data Science and Analytics Certificate">
+            <h3>Data Science & Analytics</h3>
+            <p>HP LIFE | HP Foundation</p>
+        </div>
+
+        <div class="card certificate">
+            <img src="certificate3.jpg" alt="AI for Beginners Certificate">
+            <h3>AI for Beginners</h3>
+            <p>HP LIFE | HP Foundation</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="title">My Skills</h2>
+
+    <div class="skills" style="text-align:center;">
+        <span>Artificial Intelligence</span>
+        <span>Data Science</span>
+        <span>Business Analytics</span>
+        <span>Advanced Excel</span>
+        <span>Data Analysis</span>
+        <span>Computer Skills</span>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <div class="contact">
+        <p>If you would like to connect with me, feel free to contact me.</p>
+        <a class="btn" href="mailto:YOUR-EMAIL@gmail.com">Contact Me</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Deepak Paweria | Personal Portfolio
+</footer>
+
+</body>
+</html>
